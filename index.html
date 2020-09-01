@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Video Converter</title>
+    <link href="https://vjs.zencdn.net/7.6.0/video-js.css" rel="stylesheet" />
+  </head>
+  <body>
+    <video
+      class="vjs-big-play-centered"
+      id="videoPlayer1"
+      autoplay
+      muted
+      controls
+      poster="https://picsum.photos/id/100/2500/1656"
+      loop
+      fluid
+      aspectRatio="16:9"
+      playbackRates="[0.5, 1]"
+    >
+      <source
+        src="http://localhost:3000/video/gfgvideo360.mp4"
+        type="video/mp4"
+      />
+      <p class="vjs-no-js">
+        To view this video please enable JavaScript, and consider upgrading to a
+        web browser that
+        <a href="https://videojs.com/html5-video-support/" target="_blank"
+          >supports HTML5 video</a
+        >
+      </p>
+    </video>
+    <!-- <video
+            style="height: 200px; width: 300px"
+            id="videoPlayer2"
+            controls
+            muted="muted"
+            autoplay
+          >
+            <source src="http://localhost:3000/video/gfgvideo720.mp4" type="video/mp4" />
+          </video>
+          <video
+            style="height: 200px; width: 300px"
+            id="videoPlayer3"
+            controls
+            muted="muted"
+            autoplay
+          >
+            <source src="http://localhost:3000/video/gfgvideo360.mp4" type="video/mp4" />
+          </video> -->
+
+    <script src="https://vjs.zencdn.net/7.6.0/video.js"></script>
+    <script src="//cdn.sc.gl/videojs-hotkeys/0.2/videojs.hotkeys.min.js"></script>
+    <script type="text/javascript" src="videoPlayer.js"></script>
+  </body>
+</html>
